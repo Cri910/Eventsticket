@@ -1,0 +1,135 @@
+.bottomMenuChild {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0.9px;
+  bottom: -0.9px;
+  left: -0.6px;
+  border-radius: var(--br-xl) var(--br-xl) 0 0;
+  background: linear-gradient(180deg, #1c233d, rgba(125, 122, 216, 0));
+  box-shadow: 0-10px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(30px);
+}
+.featured {
+  width: 66px;
+  position: relative;
+  display: none;
+  z-index: 1;
+}
+.icons8Account1 {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  margin: 0 !important;
+  top: 29.9px;
+  right: 39.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.icons8Schedule11,
+.icons8Star11 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.icons8Schedule11 {
+  width: 32px;
+  height: 32px;
+}
+.scheduleIcon {
+  width: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-4xs) 0 0;
+  box-sizing: border-box;
+}
+.primengIconsV500wallet {
+  width: 39px;
+  height: 39px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.homeIndicatorLight {
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) var(--padding-12xs) 0 0;
+  box-sizing: border-box;
+}
+.buttonColorFrame,
+.continueFrame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.continueFrame {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.buttonColorFrame {
+  width: 296px;
+  justify-content: flex-start;
+  padding: 0 var(--padding-27xl);
+  box-sizing: border-box;
+}
+.homeIndicator {
+  position: absolute;
+  bottom: 8px;
+  left: calc(50% - 66.5px);
+  border-radius: var(--br-81xl);
+  background-color: var(--color-darkslategray-200);
+  width: 134px;
+  height: 5px;
+}
+.homeIndicatorLight1 {
+  height: 34px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+}
+.bottomMenu,
+.bottomMenu1 {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.bottomMenu1 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0;
+}
+.bottomMenu {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0 0;
+  position: relative;
+  gap: var(--gap-sm);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--background-dropdown-background-color);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 450px) {
+  .buttonColorFrame {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

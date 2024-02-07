@@ -1,0 +1,38 @@
+.logo1Icon {
+  height: 89.7px;
+  width: 60.2px;
+  position: relative;
+  object-fit: cover;
+}
+.art {
+  color: var(--color-fuchsia);
+}
+.chainblockArt {
+  height: 45.5px;
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+  display: inline-block;
+}
+.logoCbArt,
+.logoCbArt1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logoCbArt1 {
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.logoCbArt {
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-8xl-4);
+  color: var(--background-dropdown-background-color);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 450px) {
+  .chainblockArt {
+    font-size: var(--font-size-3xl);
+  }
+}

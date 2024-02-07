@@ -1,0 +1,247 @@
+.rectangle {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: -0.65px;
+  right: 0.05px;
+  bottom: 0.65px;
+  left: -0.05px;
+  border-radius: 6.06px;
+  background-color: var(--background-dropdown-background-color);
+  box-shadow: 0 0 3.03px rgba(0, 0, 0, 0.12),
+    0 15.2px 22.73px -4.55px rgba(0, 0, 0, 0.12),
+    0 6.1px 9.09px -3.03px rgba(0, 0, 0, 0.04);
+}
+.recent {
+  width: 64px;
+  letter-spacing: 0.61px;
+  line-height: 24.25px;
+  text-transform: uppercase;
+  display: none;
+  z-index: 1;
+}
+.btc,
+.btcIcon,
+.recent {
+  position: relative;
+}
+.btcIcon {
+  height: 36.4px;
+  width: 36.4px;
+}
+.btc {
+  line-height: 30.31px;
+  font-weight: 500;
+}
+.btcWrapper {
+  flex-direction: row;
+  align-items: center;
+}
+.btcParent,
+.btcWrapper,
+.frameWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.btcParent {
+  flex-direction: row;
+  align-items: center;
+  gap: 9.09px;
+}
+.frameWrapper {
+  align-self: stretch;
+  border-radius: 6.06px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9.092671394348145px 18.18534278869629px;
+}
+.eth,
+.ethIcon {
+  position: relative;
+}
+.ethIcon {
+  height: 36.4px;
+  width: 36.4px;
+}
+.eth {
+  line-height: 30.31px;
+  font-weight: 500;
+}
+.ethWrapper {
+  flex-direction: row;
+  align-items: center;
+}
+.ethParent,
+.ethWrapper,
+.frameContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+.ethParent {
+  flex-direction: row;
+  align-items: center;
+  gap: 9.09px;
+}
+.frameContainer {
+  align-self: stretch;
+  border-radius: 6.06px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9.092671394348145px 18.18534278869629px;
+}
+.litecoinLtcIcon {
+  height: 33.8px;
+  width: 33.8px;
+  position: relative;
+  object-fit: cover;
+  min-height: 34px;
+}
+.litecoin {
+  position: relative;
+  line-height: 30.31px;
+  font-weight: 500;
+}
+.litecoinWrapper {
+  flex-direction: row;
+  align-items: center;
+}
+.frameDiv,
+.litecoinLtcParent,
+.litecoinWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.litecoinLtcParent {
+  flex-direction: row;
+  align-items: center;
+  gap: 9.09px;
+}
+.frameDiv {
+  align-self: stretch;
+  border-radius: 6.06px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9.092671394348145px 18.18534278869629px;
+}
+.usdt,
+.usdtIcon {
+  position: relative;
+}
+.usdtIcon {
+  height: 36.4px;
+  width: 36.4px;
+}
+.usdt {
+  line-height: 30.31px;
+  font-weight: 500;
+}
+.usdtWrapper {
+  flex-direction: row;
+  align-items: center;
+}
+.frameWrapper1,
+.usdtParent,
+.usdtWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.usdtParent {
+  flex-direction: row;
+  align-items: center;
+  gap: 9.09px;
+}
+.frameWrapper1 {
+  align-self: stretch;
+  border-radius: 6.06px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9.092671394348145px 18.18534278869629px;
+}
+.xpr,
+.xrpIcon {
+  position: relative;
+}
+.xrpIcon {
+  height: 36.4px;
+  width: 36.4px;
+}
+.xpr {
+  line-height: 30.31px;
+  font-weight: 500;
+}
+.xprWrapper,
+.xrpParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.xrpParent {
+  gap: 9.09px;
+}
+.frameParent,
+.frameWrapper2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper2 {
+  border-radius: 6.06px;
+  padding: 9.092671394348145px 18.18534278869629px;
+}
+.frameParent {
+  height: 357.6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  gap: 6.06px;
+  z-index: 1;
+}
+.crypto,
+.cryptoInner {
+  box-sizing: border-box;
+  display: flex;
+}
+.cryptoInner {
+  height: 335px;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs) 0 var(--padding-3xs);
+  font-size: var(--font-size-2xl-2);
+  color: var(--text-color-100);
+  font-family: var(--font-inter);
+}
+.crypto {
+  width: 312px;
+  border: 1.5px solid var(--controls-divider-color-20);
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--padding-xs) 0 0;
+  position: relative;
+  min-width: 312px;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-base-7);
+  color: var(--text-color-60);
+  font-family: var(--font-space-grotesk);
+}
+@media screen and (max-width: 1125px) {
+  .crypto {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btc,
+  .eth,
+  .litecoin,
+  .usdt,
+  .xpr {
+    font-size: var(--font-size-mid);
+    line-height: 24px;
+  }
+}

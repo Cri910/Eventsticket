@@ -1,0 +1,57 @@
+.frameChild {
+  height: 831.3px;
+  width: 2339.1px;
+  position: relative;
+  background-color: var(--color-lightsteelblue);
+  display: none;
+  max-width: 100%;
+}
+.rectangleParent,
+.wallet {
+  display: flex;
+  flex-direction: row;
+}
+.rectangleParent {
+  flex: 1;
+  background-color: var(--color-lightsteelblue);
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-90xl) var(--padding-32xl) 168px;
+  box-sizing: border-box;
+  gap: var(--gap-72xl);
+  max-width: 100%;
+}
+.wallet {
+  width: 2339.1px;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1125px) {
+  .rectangleParent {
+    flex-wrap: wrap;
+    gap: var(--gap-72xl);
+    padding-left: var(--padding-6xl);
+    padding-right: var(--padding-6xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .rectangleParent {
+    padding-top: var(--padding-52xl);
+    padding-bottom: var(--padding-90xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .rectangleParent {
+    gap: var(--gap-72xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    padding-top: var(--padding-27xl);
+    padding-bottom: var(--padding-52xl);
+    box-sizing: border-box;
+  }
+}
