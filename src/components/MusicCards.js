@@ -1,93 +1,96 @@
 import Button from "./Button";
-import styles from "./MusicCards.module.css";
 
 const MusicCards = () => {
   return (
-    <div className={styles.musicCards}>
-      <div className={styles.infoCard}>
+    <div className="self-stretch grid flex-row items-start justify-start gap-[30px] shrink-0 grid-cols-[repeat(3,_minmax(214px,_1fr))] text-left text-lg text-background-dropdown-background-color font-space-grotesk mq450:grid-cols-[minmax(214px,_1fr)] mq900:justify-center mq900:grid-cols-[repeat(2,_minmax(214px,_372px))]">
+      <div className="h-[345px] rounded-8xs bg-darkslategray-100 overflow-hidden flex flex-col items-center justify-start pt-0 px-0 pb-[27px] box-border gap-[23px]">
         <img
-          className={styles.rectangleFrameIcon}
+          className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
           loading="eager"
           alt=""
           src="/rectangle-2@2x.png"
         />
-        <div className={styles.innerCardFrame}>
-          <div className={styles.primaryContent}>
-            <div className={styles.newMusicalFrame}>
-              <div className={styles.anastasiaParent}>
-                <b className={styles.anastasia}>{`Anastasia `}</b>
-                <b className={styles.theNewMusical}>The new musical</b>
+        <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[18px] pl-[26px]">
+          <div className="flex-1 flex flex-col items-start justify-start gap-[7px]">
+            <div className="self-stretch flex flex-row items-start justify-start gap-[37px]">
+              <div className="flex flex-col items-start justify-start">
+                <b className="relative">{`Anastasia `}</b>
+                <b className="relative text-sm">The new musical</b>
               </div>
               <Button />
             </div>
-            <div className={styles.sportCardFrame}>
-              <div className={styles.price}>Price</div>
-              <div className={styles.eTHIcon}>
-                <div className={styles.priceFrame}>
+            <div className="self-stretch flex flex-row items-end justify-between gap-[20px] text-xs text-dimgray-200 font-dm-mono">
+              <div className="relative">Price</div>
+              <div className="flex flex-col items-start justify-start pt-0 px-0 pb-1 text-sm text-background-dropdown-background-color">
+                <div className="flex flex-row items-center justify-start gap-[7px]">
                   <img
-                    className={styles.priceFrameChild}
+                    className="h-2 w-2 relative rounded-[50%] object-cover"
                     alt=""
                     src="/ellipse-6@2x.png"
                   />
-                  <div className={styles.eth}>1.90 ETH</div>
+                  <div className="relative font-medium">1.90 ETH</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className={styles.infoCard1}>
+      <div className="h-[345px] rounded-8xs bg-darkslategray-100 overflow-hidden flex flex-col items-center justify-start pt-0 px-0 pb-[27px] box-border gap-[23px]">
         <img
-          className={styles.infoCardChild}
+          className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
           alt=""
           src="/rectangle-2@2x.png"
         />
-        <div className={styles.innerCardFrame1}>
-          <div className={styles.primaryContent1}>
-            <div className={styles.frameParent}>
-              <div className={styles.anastasiaGroup}>
-                <b className={styles.anastasia1}>{`Anastasia `}</b>
-                <b className={styles.theNewMusical1}>The new musical</b>
+        <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[18px] pl-[26px]">
+          <div className="flex-1 flex flex-col items-start justify-start gap-[7px]">
+            <div className="self-stretch flex flex-row items-start justify-start gap-[37px]">
+              <div className="flex flex-col items-start justify-start">
+                <b className="relative">{`Anastasia `}</b>
+                <b className="relative text-sm">The new musical</b>
               </div>
               <Button />
             </div>
-            <div className={styles.sportCardFrame1}>
-              <div className={styles.price1}>Price</div>
-              <div className={styles.eTHIcon1}>
-                <div className={styles.priceFrame1}>
+            <div className="self-stretch flex flex-row items-end justify-between gap-[20px] text-xs text-dimgray-200 font-dm-mono">
+              <div className="relative">Price</div>
+              <div className="flex flex-col items-start justify-start pt-0 px-0 pb-1 text-sm text-background-dropdown-background-color">
+                <div className="flex flex-row items-center justify-start gap-[7px]">
                   <img
-                    className={styles.priceFrameItem}
+                    className="h-2 w-2 relative rounded-[50%] object-cover"
                     alt=""
                     src="/ellipse-6@2x.png"
                   />
-                  <div className={styles.eth1}>1.90 ETH</div>
+                  <div className="relative font-medium">1.90 ETH</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className={styles.infoCard2}>
-        <img className={styles.infoCardItem} alt="" src="/rectangle-2@2x.png" />
-        <div className={styles.innerCardFrame2}>
-          <div className={styles.frameGroup}>
-            <div className={styles.frameContainer}>
-              <div className={styles.anastasiaContainer}>
-                <b className={styles.anastasia2}>{`Anastasia `}</b>
-                <b className={styles.theNewMusical2}>The new musical</b>
+      <div className="h-[345px] rounded-8xs bg-darkslategray-100 overflow-hidden flex flex-col items-center justify-start pt-0 px-0 pb-[27px] box-border gap-[23px]">
+        <img
+          className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+          alt=""
+          src="/rectangle-2@2x.png"
+        />
+        <div className="self-stretch flex flex-row items-start justify-start py-0 pr-[18px] pl-[26px]">
+          <div className="flex-1 flex flex-col items-start justify-start gap-[7px]">
+            <div className="self-stretch flex flex-row items-start justify-start py-0 pr-px pl-0 gap-[36px]">
+              <div className="flex flex-col items-start justify-start">
+                <b className="relative">{`Anastasia `}</b>
+                <b className="relative text-sm">The new musical</b>
               </div>
               <Button />
             </div>
-            <div className={styles.priceParent}>
-              <div className={styles.price2}>Price</div>
-              <div className={styles.frameWrapper}>
-                <div className={styles.ellipseParent}>
+            <div className="self-stretch flex flex-row items-end justify-between gap-[20px] text-xs text-dimgray-200 font-dm-mono">
+              <div className="relative">Price</div>
+              <div className="flex flex-col items-start justify-start pt-0 px-0 pb-1 text-sm text-background-dropdown-background-color">
+                <div className="flex flex-row items-center justify-start gap-[6px]">
                   <img
-                    className={styles.frameChild}
+                    className="h-2 w-2 relative rounded-[50%] object-cover"
                     alt=""
                     src="/ellipse-6@2x.png"
                   />
-                  <div className={styles.eth2}>1.90 ETH</div>
+                  <div className="relative font-medium">1.90 ETH</div>
                 </div>
               </div>
             </div>

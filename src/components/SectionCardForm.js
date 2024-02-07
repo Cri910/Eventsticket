@@ -1,5 +1,4 @@
 import { useMemo } from "react";
-import styles from "./SectionCardForm.module.css";
 
 const SectionCardForm = ({
   dimensions,
@@ -12,26 +11,26 @@ const SectionCardForm = ({
   groupDivPadding,
   dECPadding,
 }) => {
-  const frameDiv4Style = useMemo(() => {
+  const frameDivStyle = useMemo(() => {
     return {
       width: rectangleDivWidth,
       right: rectangleDivRight,
     };
   }, [rectangleDivWidth, rectangleDivRight]);
 
-  const frameDiv5Style = useMemo(() => {
+  const frameDiv1Style = useMemo(() => {
     return {
       padding: frameButtonPadding,
     };
   }, [frameButtonPadding]);
 
-  const frameDiv6Style = useMemo(() => {
+  const frameDiv2Style = useMemo(() => {
     return {
       padding: icons8HeartOutline1Padding,
     };
   }, [icons8HeartOutline1Padding]);
 
-  const frameDiv7Style = useMemo(() => {
+  const frameDiv3Style = useMemo(() => {
     return {
       padding: mUSICALPadding,
     };
@@ -56,55 +55,71 @@ const SectionCardForm = ({
   }, [dECPadding]);
 
   return (
-    <section className={styles.frameParent}>
-      <div className={styles.frameGroup} style={frameDiv4Style}>
-        <img className={styles.frameChild} alt="" src="/group-2@2x.png" />
-        <div className={styles.frameItem} />
+    <section className="self-stretch flex flex-col items-center justify-start pt-3 pb-[13px] pr-[15px] pl-[21px] relative gap-[193px] text-left text-smi text-gray-700 font-space-grotesk">
+      <div
+        className="w-[calc(100%_-_4px)] h-[calc(100%_-_1px)] absolute my-0 mx-[!important] top-[0.4px] right-[3.5px] bottom-[0.6px] left-[0.5px]"
+        style={frameDivStyle}
+      >
+        <img
+          className="absolute h-full w-full top-[-0.4px] right-[0.5px] bottom-[0.4px] left-[-0.5px] max-w-full overflow-hidden max-h-full object-cover"
+          alt=""
+          src="/group-2@2x.png"
+        />
+        <div className="absolute h-full w-full top-[-0.4px] right-[0.5px] bottom-[0.4px] left-[-0.5px] [background:linear-gradient(180deg,_#000,_#000_0.01%,_rgba(0,_0,_0,_0))] z-[1]" />
       </div>
-      <div className={styles.frameContainer}>
-        <header className={styles.leftSideParent}>
+      <div className="self-stretch flex flex-col items-center justify-start gap-[17px]">
+        <header className="self-stretch flex flex-row items-center justify-between">
           <img
-            className={styles.leftSideIcon}
+            className="h-[21px] w-[54px] relative z-[2]"
             loading="eager"
             alt=""
             src={dimensions}
           />
-          <div className={styles.mobileSignalParent}>
+          <div className="h-[11px] flex flex-row items-end justify-start gap-[6px]">
             <img
-              className={styles.mobileSignalIcon}
+              className="h-[10.7px] w-[17px] relative z-[2]"
               loading="eager"
               alt=""
-              src="/mobile-signal3.svg"
+              src="/mobile-signal.svg"
             />
             <img
-              className={styles.wifiIcon}
+              className="h-[11px] w-[15.3px] relative min-h-[11px] z-[2]"
               loading="eager"
               alt=""
-              src="/wifi3.svg"
+              src="/wifi.svg"
             />
-            <input className={styles.battery} type="checkbox" />
+            <input
+              className="m-0 h-[11.3px] w-[24.3px] relative z-[2]"
+              type="checkbox"
+            />
           </div>
         </header>
-        <div className={styles.frameWrapper} style={frameDiv5Style}>
-          <div className={styles.frameDiv}>
-            <button className={styles.rectangleParent}>
-              <div className={styles.frameInner} />
+        <div
+          className="self-stretch flex flex-row items-start justify-start py-0 pr-[17px] pl-2.5"
+          style={frameDiv1Style}
+        >
+          <div className="flex-1 flex flex-row items-start justify-between">
+            <button className="cursor-pointer [border:none] p-0 bg-gray-600 h-10 w-14 relative rounded-mini [backdrop-filter:blur(10px)] z-[2]">
+              <div className="absolute top-[-0.4px] left-[-0.5px] rounded-mini bg-gray-600 [backdrop-filter:blur(10px)] w-14 h-10 hidden" />
               <img
-                className={styles.icons8Left1}
+                className="absolute top-[7.6px] left-[15.5px] w-6 h-6 overflow-hidden z-[3]"
                 alt=""
                 src="/icons8-left-1.svg"
               />
             </button>
-            <div className={styles.rectangleGroup} style={frameDiv6Style}>
-              <div className={styles.rectangleDiv} />
+            <div
+              className="rounded-mini bg-gray-600 [backdrop-filter:blur(10px)] flex flex-row items-start justify-start py-2 px-4 gap-[17px] z-[2]"
+              style={frameDiv2Style}
+            >
+              <div className="h-10 w-24 relative rounded-mini bg-gray-600 [backdrop-filter:blur(10px)] hidden" />
               <img
-                className={styles.icons8HeartOutline1}
+                className="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px] z-[3]"
                 loading="eager"
                 alt=""
                 src="/icons8-heart-outline-1.svg"
               />
               <img
-                className={styles.icons8ShareRounded1}
+                className="h-6 w-6 relative overflow-hidden shrink-0 min-h-[24px] z-[3]"
                 loading="eager"
                 alt=""
                 src="/icons8-share-rounded-1.svg"
@@ -113,20 +128,40 @@ const SectionCardForm = ({
           </div>
         </div>
       </div>
-      <div className={styles.frameWrapper1} style={frameDiv7Style}>
-        <div className={styles.musicalParent}>
-          <div className={styles.musical}>MUSICAL</div>
-          <div className={styles.musicFrame} style={musicFrameStyle}>
-            <div className={styles.anastasiaLabel}>
-              <h1 className={styles.anastasia}>Anastasia</h1>
-              <div className={styles.decText} style={decTextStyle}>
-                <div className={styles.starting910Pm}>STARTING 9:10 PM</div>
+      <div
+        className="self-stretch flex flex-row items-start justify-start py-0 pr-[19px] pl-1.5"
+        style={frameDiv3Style}
+      >
+        <div className="h-20 flex-1 relative">
+          <div className="absolute top-[0px] left-[5px] tracking-[0.1em] z-[2]">
+            MUSICAL
+          </div>
+          <div
+            className="absolute top-[14px] left-[0px] w-[318px] flex flex-row items-start justify-between text-11xl text-background-dropdown-background-color font-poppins"
+            style={musicFrameStyle}
+          >
+            <div className="flex flex-col items-start justify-start gap-[4px]">
+              <h1 className="m-0 h-[45px] relative text-inherit font-bold font-inherit inline-block z-[2]">
+                Anastasia
+              </h1>
+              <div
+                className="flex flex-row items-start justify-start py-0 px-[5px] text-smi text-gray-700 font-space-grotesk"
+                style={decTextStyle}
+              >
+                <div className="relative tracking-[0.1em] z-[2]">
+                  STARTING 9:10 PM
+                </div>
               </div>
             </div>
-            <div className={styles.rectangleContainer} style={groupDivStyle}>
-              <div className={styles.frameChild1} />
-              <div className={styles.dec}>DEC</div>
-              <b className={styles.buyTicketButton}>21</b>
+            <div
+              className="rounded-mini bg-background-dropdown-background-color [backdrop-filter:blur(10px)] flex flex-col items-center justify-start pt-2 pb-[7px] pr-[19px] pl-[15px] z-[2] text-smi text-gray-800 font-mini"
+              style={groupDivStyle}
+            >
+              <div className="w-[60px] h-[60px] relative rounded-mini bg-background-dropdown-background-color [backdrop-filter:blur(10px)] hidden z-[1]" />
+              <div className="relative tracking-[0.1em] z-[1]">DEC</div>
+              <b className="h-8 relative text-7xl inline-block text-darkslategray-300 z-[1] mt-[-3px]">
+                21
+              </b>
             </div>
           </div>
         </div>
