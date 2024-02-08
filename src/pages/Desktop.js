@@ -1,91 +1,24 @@
 import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import Nav1 from "../components/Nav1";
 import Buyyourticket from "../components/Buyyourticket";
+import { useNavigate } from "react-router-dom";
 import BuyTicketsFrame from "../components/BuyTicketsFrame";
 import MarketplaceText from "../components/MarketplaceText";
 
 const Desktop = () => {
   const navigate = useNavigate();
 
-  const onNavClick = useCallback(() => {
-    navigate("/connect-wallet");
+  const onWalletConnectFrameClick = useCallback(() => {
+    navigate("/pay-methoddefault");
   }, [navigate]);
 
-  const onBuyTicketsTextClick = useCallback(() => {
-    // Please sync "Pay method/Default" to the project
-  }, []);
-
-  const onCreateWalletText1Click = useCallback(() => {
-    // Please sync "Pay method/Create wallet" to the project
-  }, []);
-
-  const onButtonClick = useCallback(() => {
-    const anchor = document.querySelector("[data-scroll-to='musicText']");
-    if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-    }
-  }, []);
-
-  const onWalletConnectFrameClick = useCallback(() => {
-    // Please sync "Pay method/Default" to the project
-  }, []);
-
   const onFooterComponentClick = useCallback(() => {
-    // Please sync "Pay method/Create wallet" to the project
-  }, []);
+    navigate("/pay-methodcreate-wallet");
+  }, [navigate]);
 
   return (
     <div className="w-full relative bg-gray-300 flex flex-col items-center justify-start pt-8 pb-[62px] pr-[58px] pl-[60px] box-border gap-[64px] tracking-[normal] mq450:gap-[64px] mq700:gap-[64px] mq700:pl-[30px] mq700:pr-[29px] mq700:box-border">
-      <header
-        className="w-[828px] flex flex-row items-center justify-start gap-[26px] max-w-full cursor-pointer text-left text-sm text-butt3 font-space-grotesk mq900:hidden"
-        onClick={onNavClick}
-      >
-        <h2 className="m-0 relative text-inherit [text-decoration:underline] font-bold font-inherit">
-          Explore
-        </h2>
-        <div className="flex-1 flex flex-row items-center justify-start gap-[22px] max-w-full">
-          <h2
-            className="m-0 relative text-inherit font-normal font-inherit whitespace-nowrap cursor-pointer"
-            onClick={onBuyTicketsTextClick}
-          >
-            Buy Tickets
-          </h2>
-          <h2
-            className="m-0 relative text-inherit font-normal font-inherit whitespace-nowrap cursor-pointer"
-            onClick={onCreateWalletText1Click}
-          >
-            Create wallet
-          </h2>
-          <h2 className="m-0 relative text-inherit font-normal font-inherit">
-            Community
-          </h2>
-          <div className="flex-1 rounded-8xs overflow-hidden flex flex-row items-start justify-between pt-2 pb-[9px] pr-2.5 pl-[7px] relative gap-[20px] border-[1px] border-solid border-butt3">
-            <input
-              className="w-[34px] [border:none] [outline:none] font-space-grotesk text-3xs bg-[transparent] h-[13px] relative text-butt3 text-left inline-block"
-              placeholder="Search"
-              type="text"
-            />
-            <img
-              className="h-[8.9px] w-[8.9px] relative"
-              alt=""
-              src="/vector.svg"
-            />
-            <img
-              className="h-[2.4px] w-[2.4px] absolute my-0 mx-[!important] right-[9px] bottom-[11px] z-[1]"
-              alt=""
-              src="/vector-12.svg"
-            />
-          </div>
-        </div>
-        <button
-          className="cursor-pointer [border:none] pt-[9px] pb-2.5 pr-[26px] pl-[29px] bg-[transparent] rounded-8xs [background:linear-gradient(85.76deg,_rgba(191,_196,_238,_0.09)_15.52%,_#c367e6_58.75%,_rgba(190,_206,_239,_0))] overflow-hidden flex flex-row items-center justify-center whitespace-nowrap"
-          onClick={onButtonClick}
-        >
-          <b className="h-[21px] relative text-sm inline-block font-poppins text-butt3 text-left">
-            Connect Wallet
-          </b>
-        </button>
-      </header>
+      <Nav1 />
       <section className="self-stretch flex flex-col items-center justify-start pt-0 px-0 pb-[17px] box-border gap-[30px] max-w-full shrink-0 text-left text-lg font-dm-mono">
         <h1 className="m-0 w-[206px] relative text-inherit font-medium font-inherit text-transparent !bg-clip-text [background:linear-gradient(85.76deg,_rgba(191,_196,_238,_0.09)_15.52%,_#c367e6_58.75%,_rgba(190,_206,_239,_0))] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] inline-block [text-shadow:0px_4px_4px_rgba(0,_0,_0,_0.5)]">
           Connect your wallet
@@ -102,7 +35,7 @@ const Desktop = () => {
           </button>
         </div>
         <BuyTicketsFrame />
-        <button className="cursor-pointer py-2.5 pr-7 pl-[31px] bg-[transparent] rounded-8xs overflow-hidden flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid border-background-dropdown-background-color hover:bg-gainsboro-200 hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100">
+        <button className="cursor-pointer py-2.5 pr-7 pl-[31px] bg-[transparent] rounded-8xs overflow-hidden flex flex-row items-center justify-center whitespace-nowrap border-[1px] border-solid border-background-dropdown-background-color hover:bg-gainsboro-300 hover:box-border hover:border-[1px] hover:border-solid hover:border-gainsboro-100">
           <b className="relative text-mini font-space-grotesk text-butt3 text-left">
             See others
           </b>

@@ -9,14 +9,14 @@ const FrameComponent1 = ({
   propLeft,
   propPadding,
 }) => {
-  const frameDiv8Style = useMemo(() => {
+  const frameDiv2Style = useMemo(() => {
     return {
       top: propTop,
       left: propLeft,
     };
   }, [propTop, propLeft]);
 
-  const frameDiv9Style = useMemo(() => {
+  const frameDiv3Style = useMemo(() => {
     return {
       padding: propPadding,
     };
@@ -25,7 +25,7 @@ const FrameComponent1 = ({
   return (
     <div
       className="w-[294px] my-0 mx-[!important] absolute top-[-0.2px] left-[300px] rounded-8xs bg-darkslategray-100 overflow-hidden shrink-0 flex flex-row items-center justify-between pt-[9px] pb-[7px] pr-[18px] pl-2 box-border gap-[20px] text-left text-5xs text-background-dropdown-background-color font-dm-mono"
-      style={frameDiv8Style}
+      style={frameDiv2Style}
     >
       <div className="flex flex-row items-center justify-start gap-[7px]">
         <img
@@ -47,7 +47,7 @@ const FrameComponent1 = ({
       </div>
       <div
         className="h-1.5 flex flex-col items-start justify-start pt-0 px-0 pb-[3px] box-border"
-        style={frameDiv9Style}
+        style={frameDiv3Style}
       >
         <img className="w-5 h-[2.5px] relative" alt="" src={icon1} />
       </div>

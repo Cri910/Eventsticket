@@ -9,13 +9,13 @@ const FrameComponent2 = ({
   propTop,
   propHeight,
 }) => {
-  const frameDiv6Style = useMemo(() => {
+  const frameDivStyle = useMemo(() => {
     return {
       top: propTop,
     };
   }, [propTop]);
 
-  const frameDiv7Style = useMemo(() => {
+  const frameDiv1Style = useMemo(() => {
     return {
       height: propHeight,
     };
@@ -24,7 +24,7 @@ const FrameComponent2 = ({
   return (
     <div
       className="my-0 mx-[!important] absolute top-[-0.2px] left-[0px] rounded-8xs bg-darkslategray-100 overflow-hidden flex flex-row items-center justify-start pt-[9px] pb-[7px] pr-3 pl-2 gap-[7px] text-left text-5xs text-background-dropdown-background-color font-dm-mono"
-      style={frameDiv6Style}
+      style={frameDivStyle}
     >
       <div className="h-[47px] w-[71px] relative">
         <img
@@ -53,7 +53,7 @@ const FrameComponent2 = ({
       </div>
       <div
         className="flex flex-col items-start justify-start pt-0 px-0 pb-[25px]"
-        style={frameDiv7Style}
+        style={frameDiv1Style}
       >
         <img
           className="w-5 h-[2.5px] relative z-[2]"

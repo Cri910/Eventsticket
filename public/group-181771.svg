@@ -1,9 +1,9 @@
 <svg width="342" height="129" viewBox="0 0 342 129" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_177_171)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M35.8381 40.3763C35.8381 32.0921 42.5539 25.3763 50.8381 25.3763H291.838C300.122 25.3763 306.838 32.0921 306.838 40.3763V68.3763C306.838 76.6606 300.122 83.3763 291.838 83.3763H50.8381C42.5539 83.3763 35.8381 76.6606 35.8381 68.3763V40.3763Z" fill="#DADAFB"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0754 40.8123C35.0754 32.528 41.7912 25.8123 50.0754 25.8123H291.075C299.36 25.8123 306.075 32.528 306.075 40.8123V68.8123C306.075 77.0965 299.36 83.8123 291.075 83.8123H50.0754C41.7912 83.8123 35.0754 77.0965 35.0754 68.8123V40.8123Z" fill="#DADAFB"/>
 </g>
 <defs>
-<filter id="filter0_d_177_171" x="0.838135" y="0.376343" width="341" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_177_171" x="0.0754395" y="0.812256" width="341" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="10"/>

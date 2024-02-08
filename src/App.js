@@ -6,14 +6,16 @@ import {
   useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
+import TicketDetails from "./pages/TicketDetails";
+import TicketDetails1 from "./pages/TicketDetails1";
+import Desktop from "./pages/Desktop";
+import EventTicketsFeatured from "./pages/EventTicketsFeatured";
 import EventDetails from "./pages/EventDetails";
-import Filter from "./pages/Filter";
-import CreateWalletMobile from "./pages/CreateWalletMobile";
 import EventDetails1 from "./pages/EventDetails1";
 import SeeAllEvents from "./pages/SeeAllEvents";
-import EventTicketsFeatured from "./pages/EventTicketsFeatured";
+import Filter from "./pages/Filter";
 import WalletMob from "./pages/WalletMob";
-import Desktop from "./pages/Desktop";
+import CreateWalletMobile from "./pages/CreateWalletMobile";
 
 function App() {
   const action = useNavigationType();
@@ -35,15 +37,23 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/ticket-details":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/ticket-details1":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/desktop-2":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/event-tickets-featured":
+        title = "";
+        metaDescription = "";
+        break;
       case "/event-details":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/filter":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/create-wallet-mobile":
         title = "";
         metaDescription = "";
         break;
@@ -55,7 +65,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/event-tickets-featured":
+      case "/filter":
         title = "";
         metaDescription = "";
         break;
@@ -63,7 +73,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-2":
+      case "/create-wallet-mobile":
         title = "";
         metaDescription = "";
         break;
@@ -86,17 +96,19 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/event-details" element={<EventDetails />} />
-      <Route path="/filter" element={<Filter />} />
-      <Route path="/create-wallet-mobile" element={<CreateWalletMobile />} />
-      <Route path="/event-details1" element={<EventDetails1 />} />
-      <Route path="/see-all-events" element={<SeeAllEvents />} />
+      <Route path="/ticket-details" element={<TicketDetails />} />
+      <Route path="/ticket-details1" element={<TicketDetails1 />} />
+      <Route path="/desktop-2" element={<Desktop />} />
       <Route
         path="/event-tickets-featured"
         element={<EventTicketsFeatured />}
       />
+      <Route path="/event-details" element={<EventDetails />} />
+      <Route path="/event-details1" element={<EventDetails1 />} />
+      <Route path="/see-all-events" element={<SeeAllEvents />} />
+      <Route path="/filter" element={<Filter />} />
       <Route path="/wallet-mob" element={<WalletMob />} />
-      <Route path="/desktop-2" element={<Desktop />} />
+      <Route path="/create-wallet-mobile" element={<CreateWalletMobile />} />
     </Routes>
   );
 }
